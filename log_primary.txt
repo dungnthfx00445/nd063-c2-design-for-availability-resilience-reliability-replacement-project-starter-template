@@ -1,0 +1,30 @@
+MySQL [udacity]> USE udacity;
+Database changed
+MySQL [udacity]> SHOW TABLES;
++-------------------+
+| Tables_in_udacity |
++-------------------+
+| test_table        |
++-------------------+
+1 row in set (0.001 sec)
+
+MySQL [udacity]> SELECT * FROM test_table;
++----+-------------+---------------------+
+| id | name        | creation_date       |
++----+-------------+---------------------+
+|  1 | Test Name 1 | 2025-01-02 15:03:52 |
+|  2 | Test Name 2 | 2025-01-02 15:03:52 |
++----+-------------+---------------------+
+2 rows in set (0.001 sec)
+
+MySQL [udacity]> DESCRIBE test_table;
++---------------+--------------+------+-----+-------------------+-------------------+
+| Field         | Type         | Null | Key | Default           | Extra             |
++---------------+--------------+------+-----+-------------------+-------------------+
+| id            | int          | NO   | PRI | NULL              | auto_increment    |
+| name          | varchar(100) | YES  |     | NULL              |                   |
+| creation_date | timestamp    | YES  |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED |
++---------------+--------------+------+-----+-------------------+-------------------+
+3 rows in set (0.001 sec)
+
+MySQL [udacity]> notee;
